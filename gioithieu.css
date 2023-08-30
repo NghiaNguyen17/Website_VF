@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.wrappergioithieu{
+    position: relative;
+    overflow: hidden;
+}
+
+.containergioithieu{
+    padding: 7% 10% 5% 10%;
+}
+.aboutus{
+    margin: 0 auto;
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    width: fit-content;
+}
+
+.row{
+    align-items: center;
+    display: flex;
+}
+.left{
+    width: 60%;
+}
+
+.left h2{
+    margin-top: 15px;
+}
+
+.left p{
+    margin-top: 12px;
+    font-size: 13pt;
+}
+
+.right{
+    width: 40%;
+}
+.right img{
+    margin-left: 80px;
+    object-fit: contain;
+    max-width: 100%;
+    width: 380px;
+}
+
+.why h2{
+    font-weight: 700;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.why ul{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.why ul li{
+    text-align: center;
+}
+
+.why ul li h2{
+    color: #4441cf;
+    font-size: 24px;
+}
+
+.why ul li span{
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.why ul li p{
+    margin-top: 5px;
+}

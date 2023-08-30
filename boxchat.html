@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Chat Box Design | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.chatwithme{
+  overflow: hidden;
+}
+div.chatwithme #click{
+  display: none;
+}
+div.chatwithme label{
+  position: absolute;
+  right: 700px;
+  bottom: 200px;
+  height: 55px;
+  width: 55px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+div.chatwithme label i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+div.chatwithme label i.fas{
+  opacity: 0;
+  pointer-events: none;
+}
+#click:checked ~ label i.fas{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+#click:checked ~ label i.fab{
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+div.chatwithme .wrapper{
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+#click:checked ~ .wrapper{
+  opacity: 1;
+  bottom: 85px;
+  pointer-events: auto;
+}
+div.chatwithme .wrapper .head-text{
+  line-height: 60px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 20px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+div.chatwithme .wrapper .chat-box{
+  padding: 20px;
+  width: 100%;
+}
+div.chatwithme .wrapper .chat-box .desc-text{
+  color: #515365;
+  text-align: center;
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 500;
+}
+div.chatwithme .wrapper .chat-box form{
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+}
+div.chatwithme .wrapper .chat-box form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+div.chatwithme .wrapper .chat-box form .field:last-child{
+  margin-bottom: 15px;
+}
+div.chatwithme .wrapper .chat-box form .field input,
+div.chatwithme .wrapper .chat-box form .field button,
+div.chatwithme .wrapper .chat-box form .textarea textarea{
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  outline: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+div.chatwithme .wrapper .chat-box form .field input:focus,
+div.chatwithme .wrapper .chat-box form .textarea textarea:focus{
+  border-color: #fc83bb;
+}
+div.chatwithme .wrapper .chat-box form .field input::placeholder,
+div.chatwithme .wrapper .chat-box form .textarea textarea::placeholder{
+  color: silver;
+  transition: all 0.3s ease;
+}
+div.chatwithme .wrapper .chat-box form .field input:focus::placeholder,
+div.chatwithme .wrapper .chat-box form .textarea textarea:focus::placeholder{
+  color: lightgrey;
+}
+div.chatwithme .wrapper .chat-box form .textarea{
+  height: 70px;
+  width: 100%;
+}
+div.chatwithme .wrapper .chat-box form .textarea textarea{
+  height: 100%;
+  border-radius: 50px;
+  resize: none;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+div.chatwithme .wrapper .chat-box form .field button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.3s ease;
+}
+div.chatwithme .wrapper .chat-box form .field button:active{
+  transform: scale(0.97);
+}
+      </style>
+   </head>
+   <body>
+    <div class="chatwithme">
+      <input type="checkbox" id="click">
+      <label for="click">
+      <i class="fab fa-facebook-messenger"></i>
+      <i class="fas fa-times"></i>
+      </label>
+      <div class="wrapper">
+         <div class="head-text">
+            Let's chat? - Online
+         </div>
+         <div class="chat-box">
+            <div class="desc-text">
+               Please fill out the form below to start chatting with the next available agent.
+            </div>
+            <form action="#">
+               <div class="field">
+                  <input type="text" placeholder="Your Name" required>
+               </div>
+               <div class="field">
+                  <input type="email" placeholder="Email Address" required>
+               </div>
+               <div class="field textarea">
+                  <textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
+               </div>
+               <div class="field">
+                  <button type="submit">Start Chat</button>
+               </div>
+            </form>
+         </div>
+      </div>
+    </div>
+    <section class="trangchu" id="trangchu">
+        <header>
+            <a href="#" class="logo"><img class="logo" src="logo-vietfinance.png"></a>
+            <ul>
+                <li><a href="#trangchu"><button>Trang chủ</button></a></li>
+                <li><a href="#"><button>Sản phẩm</button></a></li>
+                <li><a href="#"><button>Về vietfinance</button></a></li>
+                <li><a href="#khungbig1"><button>Tính năng</button></a></li>
+                <li><a href="#"><button>Lợi ích</button></a></li>
+                <li><a href="#"><button>Đánh giá</button></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Ứng dụng tài chính<br>cho quản lý, đầu tư<br>vừa và nhỏ</h2>
+                <p>Công ty chứng khoán VietFinance giấy phép số 50/UBCK-GPHĐKD</p>
+				<div class="textBox_button">
+                <a class="dungthu" href="#signuppage">Dùng thử miễn phí</a>
+				<a class="dangkytuvan" href="#signuppage">Đăng ký tư vấn</a>
+				<a class="muangay" href="#signuppage">Mua ngay</a>
+				</div>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="illustration.png" class="flowerpot">
+        </div>
+    </section>
+   </body>
+</html>

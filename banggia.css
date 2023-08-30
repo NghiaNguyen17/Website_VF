@@ -1,0 +1,95 @@
+.banggia{
+    display: flex;
+    justify-content: center;
+    background-image: url(bgrbanggia.png);
+    background-size: cover;
+}
+.banggia .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    background-image: url(../2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banggia .container .pkgtitle{
+    margin: 40px 0px 20px 0px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.banggia .package {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+    z-index: 0;
+}
+.banggia .package .pkgbox{
+    position: relative;
+    width: 300px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 7px rgb(0, 0, 0, 0.1);
+    margin: 30px 20px 30px 20px;
+    border-radius: 8px;
+}
+.banggia .package .pkgbox h2{
+    text-align: center;
+    color: #f0682d;
+}
+.banggia .package .pkgbox .cost{
+    text-align: center;
+    margin: 10px 10px 25px 10px;
+}
+.banggia .package .pkgbox .cost p{
+    font-size: 22pt;
+    font-weight: 800;
+    color: #516CD7;
+}
+.banggia .package .pkgbox .cost span{
+    font-size: 12pt;
+    font-weight: 600;
+    color: #7d7d7d;
+}
+.banggia .package .pkgbox div.pkglist{
+    text-align: center;
+}
+.banggia .package .pkgbox div.pkglist .pkgul{
+    list-style-type: none;
+}
+.banggia .package .pkgbox div.pkglist .pkgul li{
+    font-size: 12pt;
+    font-weight: 600;
+    color: #333333;
+    margin: 8px 0px 8px 0px;
+}
+.banggia .package .pkgbox .btnpkgdetail{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.banggia .package .pkgbox .btnpkgdetail a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12pt;
+}
+.banggia .package .pkgbox .btnpkgdetail .paybtn{
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    border: 1px;
+    border-color: inherit;
+    background: -webkit-linear-gradient(left, #516CD7, #4147BF);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.banggia .package .pkgbox .btnpkgdetail .paybtn:hover{
+    transform: scale(1.05);
+}

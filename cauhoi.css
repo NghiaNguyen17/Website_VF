@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.giaidap{
+    background-size: cover;
+    background-image: url(bgrcauhoi.png);
+}
+.containercauhoi{
+    width: 1070px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 50px 0px;
+    align-items: center;
+}
+
+.title-section{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 600;
+}
+
+.groupcauhoi{
+    padding: 30px 15px 0;
+}
+
+.question{
+    margin: 0;
+    box-sizing: border-box;    
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+
+.panel-heading{
+    font-weight: 600;
+    padding: 15px 35px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-heading p{
+    margin: 0;
+}
+.panel-heading i{
+    bottom: 0;
+    right: 0;
+}
+.panel-answer p{
+    margin: 0;
+    padding: 0 35px 15px 15px;
+    color: #a5a4a4;
+}
+
